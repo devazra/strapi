@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_navigation_icon_links",
+  "info": {
+    "displayName": "Icon Link"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "Icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

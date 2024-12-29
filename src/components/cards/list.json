@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cards_lists",
+  "info": {
+    "displayName": "list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "string"
+    }
+  }
+}

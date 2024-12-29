@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "provisions_and_bonded_stores_pages",
+  "info": {
+    "singularName": "provisions-and-bonded-stores-page",
+    "pluralName": "provisions-and-bonded-stores-pages",
+    "displayName": "Provisions & Bonded Stores Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner_title": {
+      "type": "string"
+    },
+    "banner_info": {
+      "type": "text"
+    },
+    "banner_background_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "specific_categories",
+  "info": {
+    "singularName": "specific-category",
+    "pluralName": "specific-categories",
+    "displayName": "Specific Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Name"
+    }
+  }
+}

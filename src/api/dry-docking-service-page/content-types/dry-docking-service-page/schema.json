@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "dry_docking_service_pages",
+  "info": {
+    "singularName": "dry-docking-service-page",
+    "pluralName": "dry-docking-service-pages",
+    "displayName": "Dry Docking Service Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner_title": {
+      "type": "string"
+    },
+    "banner_info": {
+      "type": "text"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.distributors-and-stockists-card"
+    },
+    "Why_Choose_Title": {
+      "type": "string"
+    },
+    "Why_Choose_info": {
+      "type": "text"
+    },
+    "Why_Choose_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "banner_background_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

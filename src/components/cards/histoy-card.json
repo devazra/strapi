@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_cards_histoy_cards",
+  "info": {
+    "displayName": "Histoy Card"
+  },
+  "options": {},
+  "attributes": {
+    "Year": {
+      "type": "string"
+    },
+    "Info": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

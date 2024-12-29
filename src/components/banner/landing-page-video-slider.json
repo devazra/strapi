@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_banner_landing_page_video_sliders",
+  "info": {
+    "displayName": "Landing_Page_Video_Slider"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
