@@ -11,10 +11,11 @@
     "deploy": "strapi deploy"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "5.6.0",
-    "@strapi/plugin-users-permissions": "5.6.0",
+    "@strapi/plugin-cloud": "4.25.7",
+    "@strapi/plugin-i18n": "4.25.7",
+    "@strapi/plugin-users-permissions": "4.25.7",
     "@strapi/provider-upload-cloudinary": "^5.6.0",
-    "@strapi/strapi": "5.6.0",
+    "@strapi/strapi": "4.25.7",
     "better-sqlite3": "8.6.0",
     "pg": "^8.13.1",
     "react": "^18.0.0",
@@ -28,9 +29,5 @@
   "strapi": {
     "uuid": "18d95fcb-87ea-44a4-a6a0-85b2dddcb430"
   },
-  "engines": {
-    "node": "20.15.0",
-    "npm": "10.8.1"
-  }, 
   "license": "MIT"
 }
