@@ -1487,6 +1487,7 @@ export interface ApiProvisionsAndBondedStoresPageProvisionsAndBondedStoresPage
     singularName: 'provisions-and-bonded-stores-page';
     pluralName: 'provisions-and-bonded-stores-pages';
     displayName: 'Provisions & Bonded Stores Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1497,6 +1498,7 @@ export interface ApiProvisionsAndBondedStoresPageProvisionsAndBondedStoresPage
     banner_background_image: Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;
+    Cards: Attribute.Component<'cards.provisions-card', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1685,7 +1687,7 @@ export interface ApiTechnicalMarineStoresPageTechnicalMarineStoresPage
       'images' | 'files' | 'videos' | 'audios'
     >;
     Tags: Attribute.Component<'cards.list', true>;
-    Cards: Attribute.Component<'cards.content-card', true>;
+    Card: Attribute.Component<'cards.list-card', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

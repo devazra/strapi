@@ -34,10 +34,10 @@
       "repeatable": true,
       "component": "cards.list"
     },
-    "Cards": {
+    "Card": {
       "type": "component",
       "repeatable": true,
-      "component": "cards.content-card"
+      "component": "cards.list-card"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "provisions-and-bonded-stores-page",
     "pluralName": "provisions-and-bonded-stores-pages",
-    "displayName": "Provisions & Bonded Stores Page"
+    "displayName": "Provisions & Bonded Stores Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,20 @@
       "type": "text"
     },
     "banner_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.provisions-card"
     }
   }
 }
