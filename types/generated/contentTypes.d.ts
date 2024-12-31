@@ -1722,7 +1722,6 @@ export interface ApiWhyChooseAdamallyWhyChooseAdamally
     title: Attribute.String;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     WhyChoose: Attribute.Component<'cards.why-choose-card', true>;
-    description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
