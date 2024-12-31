@@ -65,9 +65,6 @@
     "PresentDayTitle": {
       "type": "string"
     },
-    "PresentDayInfo": {
-      "type": "text"
-    },
     "PresentDayImage": {
       "type": "media",
       "multiple": false,
@@ -95,18 +92,8 @@
       "repeatable": true,
       "component": "cards.expertise-card"
     },
-    "Buttons": {
-      "type": "component",
-      "repeatable": true,
-      "component": "navigation.links"
-    },
-    "Socials": {
-      "type": "component",
-      "repeatable": true,
-      "component": "navigation.icon-link"
-    },
-    "Copyright_Text": {
-      "type": "string"
+    "PresentDayInfo": {
+      "type": "richtext"
     }
   }
 }

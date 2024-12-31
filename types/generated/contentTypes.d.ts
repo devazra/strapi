@@ -811,13 +811,10 @@ export interface ApiAboutPageAboutPage extends Schema.SingleType {
     history_subtitle: Attribute.String;
     HistoryList: Attribute.Component<'cards.histoy-card', true>;
     PresentDayTitle: Attribute.String;
-    PresentDayInfo: Attribute.Text;
     PresentDayImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     ExpertiseMedia: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     ExpertiseCards: Attribute.Component<'cards.expertise-card', true>;
-    Buttons: Attribute.Component<'navigation.links', true>;
-    Socials: Attribute.Component<'navigation.icon-link', true>;
-    Copyright_Text: Attribute.String;
+    PresentDayInfo: Attribute.RichText;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
