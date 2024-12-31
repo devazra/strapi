@@ -815,6 +815,9 @@ export interface ApiAboutPageAboutPage extends Schema.SingleType {
     PresentDayImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     ExpertiseMedia: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     ExpertiseCards: Attribute.Component<'cards.expertise-card', true>;
+    Buttons: Attribute.Component<'navigation.links', true>;
+    Socials: Attribute.Component<'navigation.icon-link', true>;
+    Copyright_Text: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

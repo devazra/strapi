@@ -1,29 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface BannerLandingPageVideoSlider extends Schema.Component {
-  collectionName: 'components_banner_landing_page_video_sliders';
-  info: {
-    displayName: 'Landing_Page_Video_Slider';
-  };
-  attributes: {
-    title: Attribute.String;
-    sub_title: Attribute.String;
-    video: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
-export interface BannerDistributorsStockistsBanner extends Schema.Component {
-  collectionName: 'components_banner_distributors_stockists_banners';
-  info: {
-    displayName: 'Distributors Stockists Banner';
-  };
-  attributes: {
-    title: Attribute.String;
-    sub_title: Attribute.String;
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
 export interface NavigationRequestAQouteButton extends Schema.Component {
   collectionName: 'components_navigation_request_a_qoute_buttons';
   info: {
@@ -65,6 +41,46 @@ export interface NavigationIconLink extends Schema.Component {
   attributes: {
     link: Attribute.String;
     Icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface FooterAdamallysMarineShipChandlingServices
+  extends Schema.Component {
+  collectionName: 'components_footer_adamallys_marine_ship_chandling_services';
+  info: {
+    displayName: 'Adamallys Marine Ship chandling services';
+  };
+  attributes: {
+    Location: Attribute.String;
+    Telephone: Attribute.String;
+    Fax: Attribute.String;
+    Email: Attribute.String;
+  };
+}
+
+export interface FooterAdamallysLlc extends Schema.Component {
+  collectionName: 'components_footer_adamallys_llcs';
+  info: {
+    displayName: 'Adamallys LLC';
+  };
+  attributes: {
+    Location: Attribute.String;
+    Telephone: Attribute.String;
+    Fax: Attribute.String;
+    Email: Attribute.String;
+  };
+}
+
+export interface FooterAdamallysGroup2 extends Schema.Component {
+  collectionName: 'components_footer_adamallys_group_2s';
+  info: {
+    displayName: 'Adamallys Group 2';
+  };
+  attributes: {
+    address: Attribute.String;
+    Telephone: Attribute.String;
+    Fax: Attribute.String;
+    Email: Attribute.String;
   };
 }
 
@@ -255,55 +271,40 @@ export interface CardsCertificationsAndMemberships extends Schema.Component {
   };
 }
 
-export interface FooterAdamallysMarineShipChandlingServices
-  extends Schema.Component {
-  collectionName: 'components_footer_adamallys_marine_ship_chandling_services';
+export interface BannerLandingPageVideoSlider extends Schema.Component {
+  collectionName: 'components_banner_landing_page_video_sliders';
   info: {
-    displayName: 'Adamallys Marine Ship chandling services';
+    displayName: 'Landing_Page_Video_Slider';
   };
   attributes: {
-    Location: Attribute.String;
-    Telephone: Attribute.String;
-    Fax: Attribute.String;
-    Email: Attribute.String;
+    title: Attribute.String;
+    sub_title: Attribute.String;
+    video: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
-export interface FooterAdamallysLlc extends Schema.Component {
-  collectionName: 'components_footer_adamallys_llcs';
+export interface BannerDistributorsStockistsBanner extends Schema.Component {
+  collectionName: 'components_banner_distributors_stockists_banners';
   info: {
-    displayName: 'Adamallys LLC';
+    displayName: 'Distributors Stockists Banner';
   };
   attributes: {
-    Location: Attribute.String;
-    Telephone: Attribute.String;
-    Fax: Attribute.String;
-    Email: Attribute.String;
-  };
-}
-
-export interface FooterAdamallysGroup2 extends Schema.Component {
-  collectionName: 'components_footer_adamallys_group_2s';
-  info: {
-    displayName: 'Adamallys Group 2';
-  };
-  attributes: {
-    address: Attribute.String;
-    Telephone: Attribute.String;
-    Fax: Attribute.String;
-    Email: Attribute.String;
+    title: Attribute.String;
+    sub_title: Attribute.String;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'banner.landing-page-video-slider': BannerLandingPageVideoSlider;
-      'banner.distributors-stockists-banner': BannerDistributorsStockistsBanner;
       'navigation.request-a-qoute-button': NavigationRequestAQouteButton;
       'navigation.links': NavigationLinks;
       'navigation.icon': NavigationIcon;
       'navigation.icon-link': NavigationIconLink;
+      'footer.adamallys-marine-ship-chandling-services': FooterAdamallysMarineShipChandlingServices;
+      'footer.adamallys-llc': FooterAdamallysLlc;
+      'footer.adamallys-group-2': FooterAdamallysGroup2;
       'cards.why-choose-card': CardsWhyChooseCard;
       'cards.title-list': CardsTitleList;
       'cards.title-contnet': CardsTitleContnet;
@@ -319,9 +320,8 @@ declare module '@strapi/types' {
       'cards.distributors-and-stockists-card': CardsDistributorsAndStockistsCard;
       'cards.content-card': CardsContentCard;
       'cards.certifications-and-memberships': CardsCertificationsAndMemberships;
-      'footer.adamallys-marine-ship-chandling-services': FooterAdamallysMarineShipChandlingServices;
-      'footer.adamallys-llc': FooterAdamallysLlc;
-      'footer.adamallys-group-2': FooterAdamallysGroup2;
+      'banner.landing-page-video-slider': BannerLandingPageVideoSlider;
+      'banner.distributors-stockists-banner': BannerDistributorsStockistsBanner;
     }
   }
 }
