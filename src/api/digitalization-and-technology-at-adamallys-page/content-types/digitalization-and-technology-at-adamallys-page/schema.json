@@ -32,10 +32,10 @@
         "audios"
       ]
     },
-    "Content_Cards": {
+    "Cards": {
       "type": "component",
       "repeatable": true,
-      "component": "cards.content-card"
+      "component": "cards.list-card"
     }
   }
 }

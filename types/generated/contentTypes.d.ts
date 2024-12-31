@@ -959,7 +959,7 @@ export interface ApiDigitalizationAndTechnologyAtAdamallysPageDigitalizationAndT
     Banner_Title: Attribute.String;
     Banner_Info: Attribute.String;
     Banner_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Content_Cards: Attribute.Component<'cards.content-card', true>;
+    Cards: Attribute.Component<'cards.list-card', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1644,15 +1644,12 @@ export interface ApiSustainabilityAtAdamallysPageSustainabilityAtAdamallysPage
       true
     >;
     BannerContent: Attribute.Text;
-    OUR_VISION_GOALS_Content: Attribute.Blocks;
-    OurCommitmentContents: Attribute.Blocks;
-    Vision_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Commitment_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     CSR_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Content: Attribute.Text;
     fst_content: Attribute.Text;
     sec_content: Attribute.Text;
     third_content: Attribute.Text;
+    Cards: Attribute.Component<'cards.list-card', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

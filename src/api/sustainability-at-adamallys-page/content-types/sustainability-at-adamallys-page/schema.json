@@ -29,41 +29,16 @@
     "BannerContent": {
       "type": "text"
     },
-    "OUR_VISION_GOALS_Content": {
-      "type": "blocks"
-    },
-    "OurCommitmentContents": {
-      "type": "blocks"
-    },
-    "Vision_Image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "Commitment_Image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "CSR_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Content": {
       "type": "text"
@@ -76,6 +51,11 @@
     },
     "third_content": {
       "type": "text"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.list-card"
     }
   }
 }
