@@ -214,10 +214,11 @@ export interface CardsHistoyCard extends Schema.Component {
   collectionName: 'components_cards_histoy_cards';
   info: {
     displayName: 'Histoy Card';
+    description: '';
   };
   attributes: {
     Year: Attribute.String;
-    Info: Attribute.String;
+    Info: Attribute.Text;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
