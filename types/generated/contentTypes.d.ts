@@ -1072,6 +1072,9 @@ export interface ApiFooterFooter extends Schema.SingleType {
     AdamallysGroup2: Attribute.Component<'footer.adamallys-group-2'>;
     AdamallysLLC: Attribute.Component<'footer.adamallys-llc'>;
     AdamallysMarineShipChandlingServices: Attribute.Component<'footer.adamallys-marine-ship-chandling-services'>;
+    Buttons: Attribute.Component<'navigation.links', true>;
+    Socials: Attribute.Component<'navigation.icon-link', true>;
+    Copyright_Text: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -45,6 +45,19 @@
       "type": "component",
       "repeatable": false,
       "component": "footer.adamallys-marine-ship-chandling-services"
+    },
+    "Buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.links"
+    },
+    "Socials": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.icon-link"
+    },
+    "Copyright_Text": {
+      "type": "string"
     }
   }
 }
