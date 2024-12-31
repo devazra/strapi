@@ -257,6 +257,7 @@ export interface CardsContentCard extends Schema.Component {
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     link: Attribute.String;
     Caption: Attribute.Text;
+    sub_title: Attribute.Text;
   };
 }
 

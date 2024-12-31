@@ -25,6 +25,9 @@
     },
     "Caption": {
       "type": "text"
+    },
+    "sub_title": {
+      "type": "text"
     }
   }
 }
