@@ -30,6 +30,9 @@
       "type": "component",
       "repeatable": true,
       "component": "cards.why-choose-card"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
