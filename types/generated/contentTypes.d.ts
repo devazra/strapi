@@ -1024,7 +1024,7 @@ export interface ApiDryDockingServicePageDryDockingServicePage
     draftAndPublish: true;
   };
   attributes: {
-    banner_title: Attribute.String;
+    banner_title: Attribute.Text;
     banner_info: Attribute.Text;
     cards: Attribute.Component<'cards.distributors-and-stockists-card', true>;
     Why_Choose_Title: Attribute.String;
@@ -1496,7 +1496,7 @@ export interface ApiProvisionsAndBondedStoresPageProvisionsAndBondedStoresPage
     draftAndPublish: true;
   };
   attributes: {
-    banner_title: Attribute.String;
+    banner_title: Attribute.Text;
     banner_info: Attribute.Text;
     banner_background_image: Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -1533,7 +1533,7 @@ export interface ApiShipSparePartsPageShipSparePartsPage
     draftAndPublish: true;
   };
   attributes: {
-    banner_title: Attribute.String;
+    banner_title: Attribute.Text;
     banner_Info: Attribute.Text;
     banner_background_image: Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -1541,7 +1541,7 @@ export interface ApiShipSparePartsPageShipSparePartsPage
     Why_Choose_Title: Attribute.String;
     Why_Choose_Info: Attribute.Text;
     Why_Choose_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    Cards: Attribute.Component<'cards.content-card', true>;
+    Cards: Attribute.Component<'cards.list-card', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1681,8 +1681,8 @@ export interface ApiTechnicalMarineStoresPageTechnicalMarineStoresPage
     draftAndPublish: true;
   };
   attributes: {
-    banner_title: Attribute.String;
-    banner_info: Attribute.String;
+    banner_title: Attribute.Text;
+    banner_info: Attribute.Text;
     banner_background_image: Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

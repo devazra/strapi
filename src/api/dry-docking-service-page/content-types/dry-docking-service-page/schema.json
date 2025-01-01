@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "banner_title": {
-      "type": "string"
+      "type": "text"
     },
     "banner_info": {
       "type": "text"
@@ -41,14 +41,15 @@
       ]
     },
     "banner_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }

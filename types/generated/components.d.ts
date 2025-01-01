@@ -189,9 +189,10 @@ export interface CardsList extends Schema.Component {
   info: {
     displayName: 'list';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
-    list: Attribute.String;
+    list: Attribute.Text;
   };
 }
 
@@ -202,7 +203,7 @@ export interface CardsListCard extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
+    title: Attribute.Text;
     info: Attribute.Text;
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     lists: Attribute.Component<'cards.list', true>;

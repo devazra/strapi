@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "banner_title": {
-      "type": "string"
+      "type": "text"
     },
     "banner_Info": {
       "type": "text"
@@ -49,7 +49,7 @@
     "Cards": {
       "type": "component",
       "repeatable": true,
-      "component": "cards.content-card"
+      "component": "cards.list-card"
     }
   }
 }
