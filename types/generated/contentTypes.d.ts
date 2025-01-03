@@ -1105,6 +1105,7 @@ export interface ApiHeaderHeader extends Schema.SingleType {
     Logo: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     NavLinks: Attribute.Component<'navigation.links', true>;
     Button: Attribute.Component<'navigation.request-a-qoute-button'>;
+    Secound_Header_Nav: Attribute.Component<'navigation.links', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

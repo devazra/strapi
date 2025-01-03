@@ -32,6 +32,11 @@
       "type": "component",
       "repeatable": false,
       "component": "navigation.request-a-qoute-button"
+    },
+    "Secound_Header_Nav": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.links"
     }
   }
 }
