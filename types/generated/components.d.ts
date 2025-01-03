@@ -208,6 +208,7 @@ export interface CardsListCard extends Schema.Component {
     image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     lists: Attribute.Component<'cards.list', true>;
     link: Attribute.String;
+    Secound_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 

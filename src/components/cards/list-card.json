@@ -30,6 +30,17 @@
     },
     "link": {
       "type": "string"
+    },
+    "Secound_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }
