@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_and_events",
+  "info": {
+    "singularName": "news-and-event",
+    "pluralName": "news-and-events",
+    "displayName": "News and Events"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Excerpt": {
+      "type": "string"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
