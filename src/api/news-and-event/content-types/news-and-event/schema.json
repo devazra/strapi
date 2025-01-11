@@ -38,6 +38,16 @@
     },
     "Date": {
       "type": "date"
+    },
+    "Banner_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

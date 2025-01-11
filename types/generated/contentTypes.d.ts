@@ -1400,6 +1400,7 @@ export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
     Slug: Attribute.UID<'api::news-and-event.news-and-event', 'title'>;
     Content: Attribute.Blocks;
     Date: Attribute.Date;
+    Banner_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
