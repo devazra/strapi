@@ -1395,7 +1395,7 @@ export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
   };
   attributes: {
     title: Attribute.String;
-    Excerpt: Attribute.String;
+    Excerpt: Attribute.Text;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Slug: Attribute.UID<'api::news-and-event.news-and-event', 'title'>;
     Content: Attribute.Blocks;

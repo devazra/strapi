@@ -16,7 +16,7 @@
       "type": "string"
     },
     "Excerpt": {
-      "type": "string"
+      "type": "text"
     },
     "Image": {
       "type": "media",
