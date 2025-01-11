@@ -4,7 +4,8 @@
   "info": {
     "singularName": "news-and-event",
     "pluralName": "news-and-events",
-    "displayName": "News and Events"
+    "displayName": "News and Events",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,18 +19,22 @@
       "type": "string"
     },
     "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "Content": {
+      "type": "blocks"
     }
   }
 }

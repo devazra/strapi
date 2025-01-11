@@ -1388,6 +1388,7 @@ export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
     singularName: 'news-and-event';
     pluralName: 'news-and-events';
     displayName: 'News and Events';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1397,6 +1398,7 @@ export interface ApiNewsAndEventNewsAndEvent extends Schema.CollectionType {
     Excerpt: Attribute.String;
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Slug: Attribute.UID<'api::news-and-event.news-and-event', 'title'>;
+    Content: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
