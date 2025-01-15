@@ -27,6 +27,11 @@
       "type": "component",
       "repeatable": false,
       "component": "cards.other-services"
+    },
+    "Buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cards.buttons"
     }
   }
 }

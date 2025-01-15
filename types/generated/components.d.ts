@@ -305,6 +305,17 @@ export interface CardsCertificationsAndMemberships extends Schema.Component {
   };
 }
 
+export interface CardsButtons extends Schema.Component {
+  collectionName: 'components_cards_buttons';
+  info: {
+    displayName: 'Buttons';
+  };
+  attributes: {
+    Title: Attribute.Text;
+    Buttons: Attribute.Component<'navigation.links', true>;
+  };
+}
+
 export interface BannerLandingPageVideoSlider extends Schema.Component {
   collectionName: 'components_banner_landing_page_video_sliders';
   info: {
@@ -358,6 +369,7 @@ declare module '@strapi/types' {
       'cards.distributors-and-stockists-card': CardsDistributorsAndStockistsCard;
       'cards.content-card': CardsContentCard;
       'cards.certifications-and-memberships': CardsCertificationsAndMemberships;
+      'cards.buttons': CardsButtons;
       'banner.landing-page-video-slider': BannerLandingPageVideoSlider;
       'banner.distributors-stockists-banner': BannerDistributorsStockistsBanner;
     }

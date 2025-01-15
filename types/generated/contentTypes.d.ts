@@ -972,6 +972,7 @@ export interface ApiContactPageContactPage extends Schema.SingleType {
     singularName: 'contact-page';
     pluralName: 'contact-pages';
     displayName: 'Contact Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -982,6 +983,7 @@ export interface ApiContactPageContactPage extends Schema.SingleType {
     MobileNumber: Attribute.String;
     Fax: Attribute.String;
     Email: Attribute.String;
+    Buttons: Attribute.Component<'cards.buttons'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1706,6 +1708,7 @@ export interface ApiShipSupplyPageShipSupplyPage extends Schema.SingleType {
     content: Attribute.Blocks;
     Product_and_service: Attribute.Component<'cards.service-card', true>;
     OtherServices: Attribute.Component<'cards.other-services'>;
+    Buttons: Attribute.Component<'cards.buttons', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
