@@ -146,6 +146,7 @@ export interface CardsProvisionsCard extends Schema.Component {
     Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     title: Attribute.String;
     info: Attribute.Text;
+    Link: Attribute.Text;
     List: Attribute.Component<'cards.title-list', true>;
   };
 }

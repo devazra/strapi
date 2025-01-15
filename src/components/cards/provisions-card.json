@@ -23,6 +23,9 @@
     "info": {
       "type": "text"
     },
+    "Link": {
+      "type": "text"
+    },
     "List": {
       "type": "component",
       "repeatable": true,
