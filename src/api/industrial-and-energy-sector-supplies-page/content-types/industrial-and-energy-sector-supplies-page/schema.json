@@ -41,7 +41,7 @@
       "type": "dynamiczone",
       "components": [
         "cards.ie-list",
-        "cards.list-card"
+        "cards.ie-content"
       ]
     }
   }

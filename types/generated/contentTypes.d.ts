@@ -1249,7 +1249,7 @@ export interface ApiIndustrialAndEnergySectorSuppliesPageIndustrialAndEnergySect
     Video: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     video_title: Attribute.String;
     OtherServices: Attribute.Component<'cards.other-services'>;
-    KeyProducts: Attribute.DynamicZone<['cards.ie-list', 'cards.list-card']>;
+    KeyProducts: Attribute.DynamicZone<['cards.ie-list', 'cards.ie-content']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
