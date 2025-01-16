@@ -1634,6 +1634,11 @@ export interface ApiSecondaryCategorySecondaryCategory
       'manyToOne',
       'api::base-category.base-category'
     >;
+    general_category: Attribute.Relation<
+      'api::secondary-category.secondary-category',
+      'oneToOne',
+      'api::category.category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
