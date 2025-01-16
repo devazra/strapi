@@ -41,6 +41,13 @@
       "type": "component",
       "repeatable": false,
       "component": "cards.other-services"
+    },
+    "KeyProducts": {
+      "type": "dynamiczone",
+      "components": [
+        "cards.ie-list",
+        "cards.list-card"
+      ]
     }
   }
 }

@@ -222,6 +222,7 @@ export interface CardsList extends Schema.Component {
   };
   attributes: {
     list: Attribute.Text;
+    Label: Attribute.String;
   };
 }
 
@@ -239,6 +240,29 @@ export interface CardsListCard extends Schema.Component {
     link: Attribute.String;
     Secound_Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Info2: Attribute.Text;
+  };
+}
+
+export interface CardsIeList extends Schema.Component {
+  collectionName: 'components_cards_ie_lists';
+  info: {
+    displayName: 'IEList';
+    description: '';
+  };
+  attributes: {
+    Title: Attribute.String;
+    List: Attribute.Component<'cards.list', true>;
+  };
+}
+
+export interface CardsIeContent extends Schema.Component {
+  collectionName: 'components_cards_ie_contents';
+  info: {
+    displayName: 'IEContent';
+  };
+  attributes: {
+    Title: Attribute.String;
+    Caption: Attribute.Text;
   };
 }
 
@@ -364,6 +388,8 @@ declare module '@strapi/types' {
       'cards.marine-ropes-card': CardsMarineRopesCard;
       'cards.list': CardsList;
       'cards.list-card': CardsListCard;
+      'cards.ie-list': CardsIeList;
+      'cards.ie-content': CardsIeContent;
       'cards.histoy-card': CardsHistoyCard;
       'cards.expertise-card': CardsExpertiseCard;
       'cards.distributors-and-stockists-card': CardsDistributorsAndStockistsCard;

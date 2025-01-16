@@ -9,6 +9,9 @@
   "attributes": {
     "list": {
       "type": "text"
+    },
+    "Label": {
+      "type": "string"
     }
   }
 }
