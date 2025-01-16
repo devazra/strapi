@@ -1246,10 +1246,6 @@ export interface ApiIndustrialAndEnergySectorSuppliesPageIndustrialAndEnergySect
   attributes: {
     title: Attribute.String;
     info: Attribute.Text;
-    Our_Key_Product_Offerings: Attribute.Component<
-      'cards.why-choose-card',
-      true
-    >;
     Video: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     video_title: Attribute.String;
     OtherServices: Attribute.Component<'cards.other-services'>;

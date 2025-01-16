@@ -18,11 +18,6 @@
     "info": {
       "type": "text"
     },
-    "Our_Key_Product_Offerings": {
-      "type": "component",
-      "repeatable": true,
-      "component": "cards.why-choose-card"
-    },
     "Video": {
       "type": "media",
       "multiple": false,
