@@ -31,11 +31,6 @@
       "target": "api::base-category.base-category",
       "inversedBy": "secondary_categories"
     },
-    "general_category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::category.category"
-    },
     "general_categories": {
       "type": "relation",
       "relation": "manyToMany",

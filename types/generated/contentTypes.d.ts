@@ -1636,11 +1636,6 @@ export interface ApiSecondaryCategorySecondaryCategory
       'manyToOne',
       'api::base-category.base-category'
     >;
-    general_category: Attribute.Relation<
-      'api::secondary-category.secondary-category',
-      'oneToOne',
-      'api::category.category'
-    >;
     general_categories: Attribute.Relation<
       'api::secondary-category.secondary-category',
       'manyToMany',
