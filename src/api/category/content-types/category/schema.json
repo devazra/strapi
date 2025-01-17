@@ -30,12 +30,6 @@
       "relation": "manyToOne",
       "target": "api::base-category.base-category",
       "inversedBy": "general_categories"
-    },
-    "secondary_categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::secondary-category.secondary-category",
-      "mappedBy": "general_categories"
     }
   }
 }
