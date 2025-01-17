@@ -909,6 +909,11 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'manyToOne',
       'api::base-category.base-category'
     >;
+    secondary_category: Attribute.Relation<
+      'api::category.category',
+      'oneToOne',
+      'api::secondary-category.secondary-category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
