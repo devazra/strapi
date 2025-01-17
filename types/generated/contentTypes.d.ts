@@ -909,6 +909,11 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
       'manyToOne',
       'api::base-category.base-category'
     >;
+    secondary_categories: Attribute.Relation<
+      'api::category.category',
+      'manyToMany',
+      'api::secondary-category.secondary-category'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1634,6 +1639,11 @@ export interface ApiSecondaryCategorySecondaryCategory
     general_category: Attribute.Relation<
       'api::secondary-category.secondary-category',
       'oneToOne',
+      'api::category.category'
+    >;
+    general_categories: Attribute.Relation<
+      'api::secondary-category.secondary-category',
+      'manyToMany',
       'api::category.category'
     >;
     createdAt: Attribute.DateTime;
