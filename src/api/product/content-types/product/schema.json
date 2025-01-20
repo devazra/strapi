@@ -63,9 +63,9 @@
     },
     "base_categories": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::base-category.base-category",
-      "mappedBy": "product"
+      "mappedBy": "products"
     }
   }
 }

@@ -37,9 +37,9 @@
       "target": "api::specific-category.specific-category",
       "mappedBy": "base_category"
     },
-    "product": {
+    "products": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::product.product",
       "inversedBy": "base_categories"
     }

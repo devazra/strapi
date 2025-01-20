@@ -862,9 +862,9 @@ export interface ApiBaseCategoryBaseCategory extends Schema.CollectionType {
       'oneToMany',
       'api::specific-category.specific-category'
     >;
-    product: Attribute.Relation<
+    products: Attribute.Relation<
       'api::base-category.base-category',
-      'manyToOne',
+      'manyToMany',
       'api::product.product'
     >;
     createdAt: Attribute.DateTime;
@@ -1552,7 +1552,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
     Product_Expanation: Attribute.Blocks;
     base_categories: Attribute.Relation<
       'api::product.product',
-      'oneToMany',
+      'manyToMany',
       'api::base-category.base-category'
     >;
     createdAt: Attribute.DateTime;
